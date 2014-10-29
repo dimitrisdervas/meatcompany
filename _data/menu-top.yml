@@ -1,0 +1,11 @@
+- title: "Η αρχική"
+  href: "/"
+ 
+- title: "Η εταιρία"
+  href: "/company"
+ 
+- title: "Τα νέα μας"
+  href: "/news" 
+ 
+- title: "Επικοινωνία"
+  href: "/contact"

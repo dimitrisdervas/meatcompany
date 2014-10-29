@@ -1,0 +1,1 @@
+var equal = require('liabru/jquery-match-height:jquery.matchHeight-min.js');
