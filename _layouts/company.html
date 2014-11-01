@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="company">
+    <header class="post-header">
+    <img src="/images/{{ page.image }}" alt="">
+    <h1 class="post-title">{{ page.title }}</h1>
+    
+    </header>
+    <article>
+    <ul>
+    {% for department in site.data.company %}
+        <li>
+           <section>
+               <div class="section-company">
+                   <div class="block-image">
+                       <img src="/images/{{ department.src}}" alt="">
+                   </div>
+                   <div class="block-text">
+                       <div class="title">{{ department.title }} ( {{ department.date }} )</div>
+                       <div class="text">{{ department.text }}</div>
+                   </div>
+               </div>
+            </section>                       
+        </li>
+        {% endfor %}
+    </ul>
+        </article>

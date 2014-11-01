@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% for post in site.categories.news %}
+    <div class="news">
+
+      <header class="news-header">
+          <img src="{{ baseurl }}/images/{{post.image}}" alt="">
+        <h1 class="news-title">{{ post.title }}</h1>
+      </header>
+
+      <article class="news-content">
+        {{ post.content }}
+      </article>
+
+    </div>
+{% endfor %}

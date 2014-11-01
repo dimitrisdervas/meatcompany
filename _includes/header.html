@@ -3,22 +3,22 @@
   <div class="top-header-wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/"> <img src="http://meatcompany.gr/sites/meatcompany.gr/themes/meatcompany_underwood/logo.png" alt="Meatcompany"> </a>
-
-    <nav class="top-menu">
+       <div class="top-menu-wrapper">
+        <nav class="top-menu">
            {% for menu in site.data.menu-top %}                    
              <li>
-                 <a href="{{ site.baseurl }}/{{ menu.href }}">{{ menu.title }}</a>
+                 <a href="{{ menu.href }}">{{ menu.title }}</a>
 
              </li>
              {% endfor %}       
-    </nav>
-
+        </nav>
+</div>
   </div>
     <div class="navigation-wrapper">
                    <nav class="main-menu" role="navigation">	
                        {% for menu in site.data.menu %}  
                            <li>
-                               <a href="{{ menu.href }}.html">{{ menu.title }}</a>                                   
+                               <a href="{{ menu.href }}">{{ menu.title }}</a>                                   
                            </li>
                        {% endfor %}           
                     </nav>   

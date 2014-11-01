@@ -1,8 +1,11 @@
-- title: "Aρχική"
-  href: "/"
- 
 - title: "Eταιρία"
-  href: "/company"
+  href : "/departments/company.html"
   
 - title: "Επικοινωνία"
   href: "/contact"
+
+- title: "25410-22080"
+  href: "/"
+  
+- title: "apostolos@meatcompany.gr"
+  href: "/"

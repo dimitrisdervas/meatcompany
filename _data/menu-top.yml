@@ -1,8 +1,5 @@
-- title: "Η αρχική"
-  href: "/"
- 
 - title: "Η εταιρία"
-  href: "/company"
+  href : "/departments/company.html"
  
 - title: "Τα νέα μας"
   href: "/news" 

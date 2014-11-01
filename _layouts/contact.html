@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+      <div class="page-content">
+      <div class="page-wrapper">
+          
+    <div class="contact">
+        <div id="map-canvas"></div>
+
+      <article class="news-content">
+        {{ content }}
+      </article>
+
+    </div>
+  </div>
+    </div>
+
+    {% include footer-google.html %}
+
+  </body>
+
+</html>

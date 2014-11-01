@@ -4,6 +4,8 @@ $base-font-family: "Ubuntu";
 $background-color: #231f20;
 $header-links-color-a: #ffffff;
 $header-links-color-hover: #fddb77;
+$text-color: #ffffff;
+$base-line-height: 2;
 /**
  * Reset some basic elements
  */
@@ -53,24 +55,12 @@ img {
 
 
 
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
 
 /**
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: 0;
 }
 
 li {
@@ -145,32 +135,6 @@ blockquote {
 
 
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 
 
 
@@ -197,8 +161,7 @@ pre {
         padding:0;
         margin:0;
         overflow:hidden;
-            .title {
-           
+            .title {           
             font-size: 3rem;
             padding: 0 0 2rem 0;
             font-weight: bold;
@@ -213,25 +176,40 @@ pre {
     ul.bottom {
         list-style-type:none;
         padding:0;
-        margin:0;
+        margin:0 0 $spacing-unit 0;
         overflow:hidden;
         .section-frontpage {
             background: #efc51f;
             padding: 2rem;
-           
-        }
-        .title {
+            color: #323232;
+            .title {
             text-align: center;
-            padding: 0 0 2rem 0;
-        }
+            margin: 0 0 2rem 0;
+            }
+        }        
         a {
         color: #323232;
         font-size: 1.8rem;        
-        font-weight: bold;
-             
+        font-weight: bold     
         }
-
     }
+}
+.company {
+    ul {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        overflow:hidden;
+            .title {
+           color: #fff;  
+            font-size: 3rem;
+            padding: 0 0 2rem 0;
+            font-weight: bold;
+             }
+            .text {
+                color: #fff;        
+            }
+    }    
 }
 .post-header {
     @include container;
@@ -251,8 +229,32 @@ pre {
 .post-content {
     color: #fff; 
 }
-.allantopio ul li{
- @include gallery(4 of 12);
+.allantopio ul {
+    @include container;
+li{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    @include gallery(4 of 12);
+    margin-bottom: gutter(12);
+        .title {
+            font-size: 1.3rem;
+        }
+    }
+}
+.rendering {
+    text-align: center;
+    font-size: 1.8rem;
+    h1 {
+        font-size: 4rem;
+        margin-bottom: $spacing-unit;
+    }
+    h2 {
+        font-size: 2.8rem;
+        margin-top: $spacing-unit*2;
+        margin-bottom: $spacing-unit;
+    }
 }
 .navigation-wrapper {
     border-top: 1px solid #fff;
@@ -272,25 +274,4 @@ pre {
     }
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    color: #fff;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}

@@ -23,9 +23,12 @@
         .site-title {
             @include span( 40%);
         }
+        .top-menu-wrapper {
+            @include span( 50% last);            
+        }
         .top-menu {
-            @include span( 50% last);
             @include navigation-list(0 1rem);
+            float: right;
         }
     }
     .navigation-wrapper{
@@ -86,9 +89,38 @@
             }
     }
 }
+/* Company */
+.company ul li:nth-child(2n+1) {
+    .section-company {
+        @include container(4);
+        @include prefix(1 of 4);
+        margin-bottom: gutter(5);
+        .block-image {
+            @include span(2 of 4);
+            @include pull(1 of 4);
+        }
+    }
+}
+.company ul li:nth-child(2) {
+    .section-company {
+        @include container(4);
+        @include prefix(1 of 4);
+        margin-bottom: gutter(5);
+        .block-text {
+            @include span(3 of 4);
+            @include pull(1 of 4);
+        }
+        .block-image {
+            float: right;
+        }
+    }
+}
 
-
-
+#map-canvas {
+    @include container;
+    height: 380px;
+    color: #323232;
+}
 
 @include media-query($on-laptop) {
     .footer-col-1,
@@ -119,11 +151,9 @@
 .page-content {
 
 }
-
 .page-heading {
     font-size: 20px;
 }
-
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -132,7 +162,6 @@
         margin-bottom: $spacing-unit;
     }
 }
-
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
@@ -151,7 +180,6 @@
 .post-header {
     margin-bottom: $spacing-unit;
 }
-
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
@@ -161,31 +189,6 @@
         font-size: 36px;
     }
 }
-
 .post-content {
     margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
 }
