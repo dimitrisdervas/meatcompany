@@ -4,7 +4,7 @@ layout: default
 
 <div class="company">
     <header class="post-header">
-    <img src="/images/{{ page.image }}" alt="">
+    <img src="{{ site.baseurl }}/images/{{ page.image }}" alt="">
     <h1 class="post-title">{{ page.title }}</h1>
     
     </header>
@@ -15,7 +15,7 @@ layout: default
            <section>
                <div class="section-company">
                    <div class="block-image">
-                       <img src="/images/{{ department.src}}" alt="">
+                       <img src="{{ site.baseurl }}/images/{{ department.src}}" alt="">
                    </div>
                    <div class="block-text">
                        <div class="title">{{ department.title }} ( {{ department.date }} )</div>
