@@ -2,12 +2,12 @@
 
   <div class="top-header-wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/"> <img src="http://meatcompany.gr/sites/meatcompany.gr/themes/meatcompany_underwood/logo.png" alt="Meatcompany"> </a>
+    <a class="site-title" href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/logo.png" alt="Meatcompany"> </a>
        <div class="top-menu-wrapper">
         <nav class="top-menu">
            {% for menu in site.data.menu-top %}                    
              <li>
-                 <a href="{{ menu.href }}">{{ menu.title }}</a>
+                 <a href="{{ site.baseurl }}/{{ menu.href }}">{{ menu.title }}</a>
 
              </li>
              {% endfor %}       
@@ -18,7 +18,7 @@
                    <nav class="main-menu" role="navigation">	
                        {% for menu in site.data.menu %}  
                            <li>
-                               <a href="{{ menu.href }}">{{ menu.title }}</a>                                   
+                               <a href="{{ site.baseurl }}/{{ menu.href }}">{{ menu.title }}</a>                                   
                            </li>
                        {% endfor %}           
                     </nav>   

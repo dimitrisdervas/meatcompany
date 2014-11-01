@@ -9,10 +9,10 @@ layout: default
            <section>
                <div class="section-frontpage">
                    <div class="block-image">
-                       <a href="{{ department.href }}.html"><img src="{{ department.src}}" alt=""> </a>
+                       <a href="{{ baseurl }}/{{ department.href }}"><img src="{{ baseurl }}/{{ department.src}}" alt=""> </a>
                    </div>
                    <div class="block-text">
-                       <div class="title"><a href="{{ department.href }}.html">{{ department.title }}</a></div>
+                       <div class="title"><a href="{{ baseurl }}/{{ department.href }}">{{ department.title }}</a></div>
                        <div class="text">{{ department.text }}</div>
                    </div>
                </div>
@@ -25,7 +25,7 @@ layout: default
         <li>
             <section>
                 <div class="section-frontpage">
-                    <div clas="title"><a href="{{ department.href }}.html"> {{ department.title }}</a></div>            
+                    <div clas="title"><a href="{{ baseurl }}/{{ department.href }}"> {{ department.title }}</a></div>            
                     <div class="text">{{ department.text }}</div>      
                 </div>
             </section>
