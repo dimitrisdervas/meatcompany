@@ -4,13 +4,13 @@ title: Επικοινωνία
 permalink: /contact/
 ---
 
-#ΑΠ. ΠΑΠΑΔΟΠΟΥΛΟΣ & ΣΙΑ Ο.Ε.
+# ΑΠ. ΠΑΠΑΔΟΠΟΥΛΟΣ & ΣΙΑ Ο.Ε.
 
-##**Τel: 25410-22080** 
+## **Τel: 25410-22080** 
 
-##**Fax: 25410-22849**
+## **Fax: 25410-22849**
 
-##**email: apostolos@meatcompany.gr**
+## **email: apostolos@meatcompany.gr**
 
 **Διεύθυνση**
 
