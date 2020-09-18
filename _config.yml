@@ -11,5 +11,4 @@ collections:
  departments:
     output: true
 
-# Build settings
-markdown: kramdown
+
