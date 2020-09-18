@@ -2,6 +2,7 @@
 layout: allantopio
 title:  "Αλλαντοποιείο"
 image: allantopio2.jpg
+permalink: allantopio
 
 ---
 

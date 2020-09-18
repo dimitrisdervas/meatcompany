@@ -2,6 +2,7 @@
 layout: rendering
 title: "Rendering"
 image: rendering2.jpg
+permalink: rendering
 ---
 # **ΔΩΡΕΑΝ**
 Περισυλλογή και αποτέφρωση
