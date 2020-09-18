@@ -1,12 +1,15 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: |
+      meatcompany.gr | Τρεις Γενεές Παράδοσης Κρεοπωλών
+email: apostolos@meatcompany.gr
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ Ο παππούς, Απόστολος Παπαδόπουλος, πρόσφυγας από την Ανατολική Θράκη ανοίγει το πρώτο κατάστημα στην Ξάνθη το 1926. 
+ Tο 1954 τα παιδιά του ανοίγουν νέο κατάστημα στη Δημοτική Αγορά Ξάνθης. 
+ Με εργατικότητα και ειλικρίνεια αρχίζει να καθιερώνεται στη συνείδηση των καταναλωτών η ποιότητα και 
+ η εξυπηρέτηση που προσέφεραν οι Αφοι Παπαδόπουλοι. 
+ Την παράδοση αυτή συνεχίζουν σήμερα τα εγγόνια του παππού Απόστολου αποτελώντας την τρίτη γενιά κρεοπωλών.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://meatcompany.gr" # the base hostname & protocol for your site
 collections:
  departments:
     output: true
